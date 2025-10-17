@@ -4,7 +4,7 @@ function hamberger_toggle() {
 
 const text = [" THANACHOT VILAI", " ธนโชติ วิไล"];
 const speed = 400;
-const eraseSpeed = 50;
+const eraseSpeed = 100;
 const delay = 1500;
 let i = 0;
 let j = 0;
@@ -36,3 +36,19 @@ function typeWriter() {
 }
 
 window.onload = typeWriter;
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+document.querySelectorAll('.card img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add('open');
+  });
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove('open');
+  }
+});

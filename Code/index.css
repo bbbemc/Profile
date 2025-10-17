@@ -49,7 +49,6 @@ body {
   cursor: pointer;
 }
 
-/* HERO SECTION */
 .hero {
   text-align: center;
   margin-top: 120px;
@@ -139,6 +138,7 @@ body {
   height: auto;
   object-fit: cover;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .card h3 {
@@ -165,6 +165,29 @@ body {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(8px); }
 }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
 
 @media (max-width: 600px) {
   .nav-links {
