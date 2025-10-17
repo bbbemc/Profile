@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> &#9698;PORTFOLIO</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="img/eiei" href="img/eiei-removebg-preview.png">
+</head>
+<body>
+  <header>
+    <div class="toolbar">
+      <div class="Portfolio">PORTFOLIO</div>
+      <div class="right-side">
+        <div class="nav-links">
+          <a href="#">HOME</a>
+          <a href="#projects">CONTENT</a>
+        </div>
+        <div class="toggle" onclick="hamberger_toggle()">&#9776;</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="img/ComCamp-nonebackground.png" alt="profile" class="profile" />
+    <h1 class="intro">My name is<span id="typed-text"></span><span class="cursor">|</span></h1>
+    <p class="desc">Goals: Develop better AI and Front End skills</p>
+    <p class="scroll-text">Activities below ↓</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Activity</h2>
+    <div class="project-container">
+      <div class="card">
+        <img src="img/KU workshop.png" alt="Photo-KU" />
+        <h3>เข้าร่วมกิจกรรม <br>Engineering SPARKS 2025</h3>
+        <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</p>
+      </div>
+      <div class="card">
+        <img src="img/workshop KMILT 2023.jpg" alt="Photo-KMILT" />
+        <h3>เข้าร่วมกิจกรรม <br>บรรยายเสวนาหลักสูตร <br>ในหัวข้อ<br>The dawn of the future <br>เส้นทางไอทีเเห่งอนาคต</h3>
+        <p>คณะเทคโนโลยีสารสนเทศ <br>สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง</p>
+      </div>
+      <div class="card">
+        <img src="img/Smart Robot.jpg" alt="Photo-smartrobot" />
+        <h3>เข้าร่วมกิจกรรม Workshop ในหัวข้อ<br> Smart Robot</h3>
+        <p>คณะเทคโนโลยีสารสนเทศ <br>สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง</p>
+      </div>
+      <div class="card">
+        <img src="img/Cyberground.png" alt="Photo-Cyberground" />
+        <h3>เข้าร่วมกิจกรรม Workshop ในหัวข้อ<br>Cyberground</h3>
+        <p>คณะเทคโนโลยีสารสนเทศ <br>สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง</p>
+      </div>
+      <div class="card">
+        <img src="img/Workshop KMILT.jpg" alt="Photo-Workshop-KMILT" />
+        <h3>เข้าร่วมกิจกรรม <br>ในหัวข้อ<br>WorkShop Stage Design 3D Model with SketchUp</h3>
+        <p>สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง</p>
+      </div>
+      <div class="card">
+        <img src="img/BorntoDev.jpg" alt="Photo-Certificate from BorntoDev" />
+        <h3>เข้าร่วมกิจกรรม <br>ในหัวข้อ<br>WorkShop Stage Design 3D Model with SketchUp</h3>
+        <p>สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง</p>
+      </div>
+      <div class="card">
+        <img src="img/certhaimooc.jpg" alt="Photo-certhaimooc" />
+        <h3>ได้ผ่านเกณฑ์หลักสูตรออนไลน์ <br>ในหัวข้อ<br>ไพธอนพื้นฐานสำหรับผู้เริ่มต้น</h3>
+        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+      </div>
+      <div class="card">
+        <img src="img/งานกีฬาสีม.4.jpg" alt="Photo-Sports Day Award" />
+        <h3>มีส่วนร่วมในการทำฉากของงานสีฬาสี</h3>
+        <p>โรงเรียนสมุทรปราการ</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+  <img id="lightbox-img" src="" alt="Expanded image">
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
